@@ -1,0 +1,28 @@
+CREATE table Larocqstar_clothes (id INTEGER PRIMARY KEY, clothe_type TEXT, gender TEXT, color TEXT, price NUMERIC, size TEXT); 
+
+INSERT into Larocqstar_clothes VALUES (1, "Long sleeve shirt", "M", "Black", 36.99, "Large");
+INSERT into Larocqstar_clothes VALUES (2, "Long sleeve shirt", "M", "Dark grey", 39.99, "XLarge");
+INSERT into Larocqstar_clothes VALUES (3, "Tshirt", "M", "Black", 29.99, "Large");
+INSERT into Larocqstar_clothes VALUES (4, "Tshirt", "F", "White", 25.99, "XSmall");
+INSERT into Larocqstar_clothes VALUES (5, "Tshirt", "M", "Red", 29.99, "Medium");
+INSERT into Larocqstar_clothes VALUES (6, "Tshirt", "F", "Navy blue", 25.99, "Small");
+INSERT into Larocqstar_clothes VALUES (7, "Tshirt", "F", "Black", 39.99, "XLarge");
+INSERT into Larocqstar_clothes VALUES (8, "Jeans", "M", "Black", 69.99, "Medium");
+INSERT into Larocqstar_clothes VALUES (9, "Jeans", "M", "Dark blue", 69.99, "Large");
+INSERT into Larocqstar_clothes VALUES (10, "Jeans", "M", "Light blue", 79.99, "Small");
+INSERT into Larocqstar_clothes VALUES (11, "Yoga Pants", "F", "Black", 49.99, "Large");
+INSERT into Larocqstar_clothes VALUES (12, "Yoga Pants", "F", "Grey", 59.99, "XLarge");
+INSERT into Larocqstar_clothes VALUES (13, "Yoga Pants", "F", "Blue", 39.99, "Medium");
+INSERT into Larocqstar_clothes VALUES (14, "Yoga Pants", "F", "Dark green", 39.99, "Large");
+INSERT into Larocqstar_clothes VALUES (15, "Socks", "M", "Black", 9.99, "Medium");
+INSERT into Larocqstar_clothes VALUES (16, "Socks", "F", "White", 9.99, "Small");
+INSERT into Larocqstar_clothes VALUES (17, "Jacket", "M", "Black", 37.99, "Large");
+INSERT into Larocqstar_clothes VALUES (18, "Jacket", "F", "Brown", 37.99, "XLarge");
+INSERT into Larocqstar_clothes VALUES (19, "Water shoes", "M", "Black", 38.99, "Large");
+INSERT into Larocqstar_clothes VALUES (20, "Water shoes", "F", "Black", 36.99, "Small");
+
+--Order the items by price :
+SELECT * from Larocqstar_clothes ORDER by "price"; 
+
+--Select all the Black items : 
+SELECT * from Larocqstar_clothes WHERE color is "Black"; 
